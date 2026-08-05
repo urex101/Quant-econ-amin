@@ -17,10 +17,12 @@ for _ in range(10):
 print("Flips:", coin_list)
 
 
-for coin in range(len(coin_list)):
-    if coin_list[coin] == 1 and coin_list[coin:coin+k] == [1]*k:
+for i in range(len(coin_list)- k + 1):
+    if coin_list[i:i+k] == [1] * k:
         money += 1
-    if coin_list[coin] == -1 and coin_list[coin:coin+k] == [-1]*k:
+        print(f"Found 3 Heads at index {i}")
+    elif coin_list[i:i+k] == [-1] * k:
         money += 1
+        print(f"Found 3 Tails at index {i}")
 
 print("money:", money)
