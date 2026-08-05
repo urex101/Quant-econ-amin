@@ -1,0 +1,17 @@
+{
+  // Auto-save files so you never have to press Ctrl+S
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // GitDoc: auto-commit and auto-push this repo only
+  "gitdoc.enabled": true,
+  "gitdoc.autoCommitDelay": 30000,
+  "gitdoc.autoPush": "onCommit",
+  "gitdoc.autoPull": "onPush",
+
+  // Plain push, never force push (GitDoc defaults to forcePush)
+  "gitdoc.pushMode": "push",
+
+  // Commit even when a file has errors, so broken code still gets saved
+  "gitdoc.commitValidationLevel": "none"
+}
