@@ -14,11 +14,13 @@ for _ in range(10):
         heads += 1
     if coin == -1:
         tails += 1
+print("Flips:", coin_list)
 
-for coin in coin_list:
-    if coin == 1 and coin_list[coin:coin+k] == [1]*k:
+
+for coin in range(len(coin_list)):
+    if coin_list[coin] == 1 and coin_list[coin:coin+k] == [1]*k:
         money += 1
-    if coin == -1 and coin_list[coin:coin+k] == [-1]*k:
+    if coin_list[coin] == -1 and coin_list[coin:coin+k] == [-1]*k:
         money += 1
 
 print("money:", money)
