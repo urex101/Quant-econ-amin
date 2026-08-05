@@ -1,15 +1,9 @@
 
 
 def factorial(n):
-    for i in n:
-        
+    k = 1
+    for i in range(int(n)):
+        k = k * i+1
+    return k
 
-
-def factorial_test(n):
-    if n == 0:
-        return 1
-    if n < 0:
-        return "Error"
-    if n > 0:
-
-    
+print (factorial(0))
