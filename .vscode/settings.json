@@ -4,7 +4,9 @@
   "files.autoSaveDelay": 1000,
 
   // GitDoc: auto-commit and auto-push this repo only
-  "gitdoc.enabled": true,
+  // Temporarily off so the README update can be pushed manually.
+  // Set back to true to resume auto-syncing.
+  "gitdoc.enabled": false,
   "gitdoc.autoCommitDelay": 30000,
   "gitdoc.autoPush": "onCommit",
   "gitdoc.autoPull": "onPush",
