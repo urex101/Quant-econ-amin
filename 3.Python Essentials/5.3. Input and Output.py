@@ -1,4 +1,3 @@
-f = open('newfile.txt', 'w')   # Open 'newfile.txt' for writing
-f.write('Testing\n')           # Here '\n' means new line
-f.write('Testing again')
-f.close()
+with open('newfile.txt', 'w') as f:  
+    f.write('Testing\n')         
+    f.write('Testing again')
