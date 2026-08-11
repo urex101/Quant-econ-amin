@@ -8,9 +8,46 @@ This is a learning repo, not a library. Code here is written to understand the m
 
 ## What's in here
 
-| Path | What it is |
-|------|------------|
-| `first.py` | Starting point / scratch file |
+Work is organised by lecture section.
+
+### 1. An introductory example
+
+| File | What it does |
+|------|--------------|
+| `first.py` | Plots 100 draws from the standard normal |
+| `second.py` | Same plot built with an explicit loop and a list |
+| `third.py` | Compound interest on a bank balance over 50 periods |
+| `exercise_1.py` | Simulates and plots the AR(1) series `x[t+1] = a*x[t] + e` |
+| `exercise_1.2.py` | The same series overlaid for `a = 0, 0.8, 0.98` |
+| `exercise_2.py` | AR(1) variant using the absolute value of the previous term |
+| `exercise_2.1.py` | The same variant written with an explicit if/else |
+| `exercise_2.2.py` | Monte Carlo approximation of pi from 1,000,000 random points |
+
+### 2. Functions
+
+| File | What it does |
+|------|--------------|
+| `4.3.4.py` | Numerical integration of `x**3` with `scipy.integrate.quad` |
+| `4.4.1.py` | Builds a time series of normal draws in a loop, then plots it |
+| `4.4.2.py` | Generalises that into a function that switches between uniform and normal draws |
+| `4.5.1.py` | Computes powers of 2 with a loop |
+| `4.5.2.py` | The same result in one line with the `**` operator |
+
+### 2. Functions, 4.6 Exercises
+
+| File | What it does |
+|------|--------------|
+| `binomial_vari.py` | Draws a binomial random variable, built from uniform draws rather than a library call |
+| `Coin.py` | Flips 10 coins and scans for runs of three heads or three tails |
+| `Factorial.py` | Factorial with a for loop |
+| `Factorial2.py` | Factorial with a while loop |
+
+### 2. Functions, 4.7 Advanced Exercise
+
+| File | What it does |
+|------|--------------|
+| `fectorial.py` | Factorial written recursively, with a base case at 0 and 1 |
+| `fibonacci.py` | Fibonacci written recursively |
 
 ---
 
@@ -18,9 +55,13 @@ This is a learning repo, not a library. Code here is written to understand the m
 
 Checked off as I complete them.
 
-- [ ] Python basics: data types, control flow, functions
-- [ ] NumPy and vectorised computation
-- [ ] Matplotlib and visualisation
+- [x] Python basics: data types, control flow, loops
+- [x] Writing functions, arguments and return values
+- [x] Recursion and base cases
+- [x] NumPy arrays and the `default_rng` random generator
+- [x] Matplotlib and visualisation
+- [x] Random simulation: AR(1) series, coin flips, Monte Carlo
+- [ ] Vectorised computation (replacing loops with array operations)
 - [ ] SciPy: optimisation, interpolation, linear algebra
 - [ ] Pandas for economic data
 - [ ] Linear algebra and matrix methods
@@ -41,7 +82,7 @@ Requires Python 3.10 or newer.
 pip install numpy scipy matplotlib pandas quantecon
 
 # run a script
-python first.py
+python "1.An introductory example/first.py"
 ```
 
 For notebooks:
