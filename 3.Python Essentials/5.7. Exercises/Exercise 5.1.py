@@ -8,4 +8,5 @@ Part 3: Given pairs = ((2, 5), (4, 2), (9, 8), (12, 10)), count the number of pa
 
 x_vals = [1, 2, 3]
 y_vals = [4, 5, 6]
-zipped = zip(x_vals, y_vals)
+sum_product = sum(x * y for x, y in zip(x_vals, y_vals))
+print(sum_product)
