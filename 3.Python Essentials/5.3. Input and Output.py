@@ -15,3 +15,10 @@ with open("newfile.txt", "r") as f:
     with open("output.txt", "w") as fo:
         for i, line in enumerate(file):
             fo.write(f'Line {i}: {line} \n')
+
+
+
+
+with open("newfile.txt", "r") as f, open("output2.txt", "w") as fo:
+        for i, line in enumerate(f):
+            fo.write(f'Line {i}: {line} \n')
