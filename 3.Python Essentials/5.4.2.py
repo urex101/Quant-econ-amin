@@ -1,3 +1,3 @@
 names = ['Tom', 'John']
 marks = ['E', 'F']
-dict(zip(names, marks))
+print(list(zip(names, marks)))
